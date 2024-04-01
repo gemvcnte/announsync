@@ -13,7 +13,7 @@ const Home = () => {
   const fetchAnnouncements = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/getAllAnnouncements",
+        "https://announsync.onrender.com/api/getAllAnnouncements",
       );
       setAnnouncements(response.data.announcements);
     } catch (error) {
