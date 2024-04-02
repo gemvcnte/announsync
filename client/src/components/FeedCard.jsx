@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button";
 import { IconHeart, IconMessage, IconShare } from "@tabler/icons-react";
 
 const FeedCard = ({ announcement }) => {
-  const randomProfilePictures = [
-    {
-      randomFaceOne: {
-        url: "",
-      },
-    },
-  ];
-
+  // const randomProfilePictures = [
+  //   {
+  //     randomFaceOne: {
+  //       url: "",
+  //     },
+  //   },
+  // ];
+  //
   const { postedBy, title, description } = announcement;
 
   return (

@@ -33,7 +33,7 @@ const CreateAdminButton = () => {
   const createAdmin = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/createAdmin",
+        "https://announsync.onrender.com/api/createAdmin",
         {
           fullName,
           emailAddress,

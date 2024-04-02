@@ -29,7 +29,7 @@ const AnnouncementActionButton = ({ announcementId }) => {
   const deleteData = async () => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/deleteAnnouncement/${announcementId}`,
+        `https://announsync.onrender.com/api/deleteAnnouncement/${announcementId}`,
       );
     } catch (error) {
       console.error("Error deleting announcement:", error);

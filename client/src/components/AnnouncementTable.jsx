@@ -15,7 +15,7 @@ const AnnouncementTable = () => {
   const [announcements, setAnnouncements] = useState([]);
 
   axios
-    .get("http://localhost:5000/api/getAllAnnouncements")
+    .get("https://announsync.onrender.com/api/getAllAnnouncements")
     .then((response) => {
       if (Array.isArray(response.data.announcements)) {
         setAnnouncements(response.data.announcements);

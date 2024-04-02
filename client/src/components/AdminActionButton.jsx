@@ -29,7 +29,7 @@ const AdminActionButton = ({ userId }) => {
   const deleteData = async () => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/admin/deleteAdmin/${userId}`,
+        `https://announsync.onrender.com/api/admin/deleteAdmin/${userId}`,
       );
     } catch (error) {
       console.error("Error deleting user:", error);
@@ -38,7 +38,7 @@ const AdminActionButton = ({ userId }) => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/admin/getAllAdmins",
+        "https://announsync.onrender.com/admin/getAllAdmins",
       );
     } catch (err) {
       console.error(err);

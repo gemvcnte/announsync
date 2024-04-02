@@ -21,7 +21,7 @@ const CreateAnnouncementButton = () => {
   const createAnnouncement = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/createAnnouncement",
+        "https://announsync.onrender.com/api/createAnnouncement",
         {
           title,
           description,

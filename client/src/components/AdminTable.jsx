@@ -18,7 +18,7 @@ const AdminTable = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/getAllAdmins")
+      .get("https://announsync.onrender.com/api/getAllAdmins")
       .then((response) => {
         if (Array.isArray(response.data.admins)) {
           setAdmins(response.data.admins);
